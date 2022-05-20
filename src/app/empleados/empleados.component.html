@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="">
+
+    <title>Atenea</title>
+
+    <!-- Scripts -->
+    <script src="" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="empleados.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="empleados.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="">
+                    Atenea
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+
+
+                                <li class="nav-item header">
+                                    <a class="nav-link" href="">Iniciar sesion</a>
+                                </li>
+
+
+
+                                <li class="nav-item header">
+                                    <a class="nav-link" href="">Registrarse</a>
+                                </li>
+
+
+                            <li class="nav-item header dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href=""
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+
+                                    </a>
+                                    <a class="dropdown-item" href="">Mi perfil</a>
+
+
+                                    <form id="logout-form" action="" method="POST" class="d-none">
+
+                                    </form>
+                                </div>
+                            </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <main>
+    <div class="contenedor-total">
+
+        <hr>
+        <div class=" nav-bg   bg-black   shadow-sm">
+            <nav class="navegacion-principal">
+                <!-- <nav class="botones-nav"> -->
+
+                <div class="botones-nav">
+                    <a href="">Usuarios</a>
+                </div>
+
+                <div class="botones-nav">
+                    <a href="">Habitaciones</a>
+                </div>
+
+                <div class="botones-nav">
+                    <a href="">Clientes</a>
+                </div>
+
+                <div class="botones-nav">
+                    <a href="">Empleados</a>
+                </div>
+
+                <div class="botones-nav">
+                    <a href="">Servicios</a>
+                </div>
+
+            </nav>
+        </div>
+        <div class="principal">
+<link rel="stylesheet" href="">
+<div class="barra-buscadora">
+    <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+
+<section class="section">
+    <div class="contenedor">
+
+
+        <div class="cuadros barra-lateral">
+            <p>{{ nombre }}</p>
+            <p>{{ cargo }}</p>
+            <div class="lateral">
+                <div class="tamaño-iconos">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="tamaño-iconos">
+                    <a href="" class="abrirModalModificar">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                            <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="tamaño-iconos">
+                    <form action="" method="POST">
+
+
+
+                        <button type="submit" onclick="" style="background: none; border: none; cursor: pointer;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="12" r="9" />
+                                <line x1="9" y1="12" x2="15" y2="12" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="contenedor-botones-main">
+        <a class="boton " href="">Registrar empleado</a>
+        <a class="boton" href="">Generar reporte</a>
+    </div>
+</section>
+
+<script src=""></script>
+
+        </div>
+    </div>
+    </main>
+    </div>
+    <footer class="footer">
+        <p>Atenea Software ©</p>
+    </footer>
+</body>
+</html>
